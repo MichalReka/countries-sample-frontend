@@ -1,0 +1,28 @@
+table {
+    width: 100%;
+}
+
+.tab-container {
+    margin: 20px;
+}
+
+.button-row {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    padding-left: 30px;
+}
+
+.row-is-clicked {
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.mat-row .mat-cell {
+    background-color: rgba(0, 0, 0, 0.075) transparent;
+    cursor: pointer;
+}
+
+.mat-row:hover .mat-cell {
+    background-color: rgba(0, 0, 0, 0.075);
+}

@@ -1,0 +1,36 @@
+<div class="mat-elevation-z2 form-container">
+    <form [formGroup]="countryForm">
+
+        <mat-form-field>
+            <mat-label>Nazwa</mat-label>
+            <input matInput formControlName="name" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Kontynent</mat-label>
+            <input matInput formControlName="continent" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Stolica</mat-label>
+            <input matInput formControlName="capitalCity" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Powierzchnia</mat-label>
+            <input matInput formControlName="area" type="number" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Wielkość populacji</mat-label>
+            <input matInput formControlName="population" type="number" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Gęstość zamieszkania</mat-label>
+            <input matInput formControlName="populationDensity" type="number" />
+        </mat-form-field>
+    </form>
+
+    <button mat-button type="submit" (click)="handleSubmit()" [disabled]="!countryForm.valid">Zatwierdź</button>
+</div>
